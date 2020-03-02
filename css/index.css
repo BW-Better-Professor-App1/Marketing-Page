@@ -134,7 +134,7 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #5E6164;
 }
 h1,
@@ -142,7 +142,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #23293B;
 }
 h2 {
@@ -183,17 +183,44 @@ p {
   margin: 0 2rem;
   font-size: 1.5rem;
   text-decoration: none;
+  transition: color 0.3s;
+}
+.nav-bar nav .nav-right a:visited,
+.nav-bar nav .nav-left a:visited,
+.nav-bar nav .nav-right a active,
+.nav-bar nav .nav-left a active {
+  color: #5E6164;
+}
+.nav-bar nav .nav-right a:hover,
+.nav-bar nav .nav-left a:hover {
+  color: #6C63FF;
 }
 header .cta {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
-header .cta h2 {
+header .cta .cta-container {
+  display: flex;
+}
+header .cta .cta-container .cta-text {
+  margin: -1rem 4rem;
+}
+header .cta .cta-container .cta-text h2 {
   font-size: 2.8rem;
+  line-height: 4rem;
   margin: 5rem 0 2rem;
 }
-header .cta p {
+header .cta .cta-container .cta-text h2 span {
+  color: #6C63FF;
+}
+header .cta .cta-container .cta-text p {
   font-size: 1.5rem;
   margin-bottom: 2rem;
+}
+header .cta .cta-container .cta-img img {
+  width: 100%;
 }
 header .cta .cta-btn {
   margin-bottom: 10rem;
@@ -201,6 +228,15 @@ header .cta .cta-btn {
 header .cta .cta-btn button {
   cursor: pointer;
   padding: 2%;
+  font-family: 'Montserrat';
+  color: white;
+  background-color: #454B69;
+  transition: background-color 0.2s, border 0.2s;
+  border: none;
+  border-radius: 2rem 5rem;
+}
+header .cta .cta-btn button:hover {
+  background-color: #6C63FF;
 }
 .features {
   display: flex;
@@ -270,7 +306,7 @@ header .cta .cta-btn button {
   align-items: center;
 }
 .reviews .join-now .join-img {
-  width: 40%;
+  width: 50%;
 }
 .reviews .join-now .join-img img {
   width: 100%;
