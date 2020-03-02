@@ -155,3 +155,50 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+}
+.nav-bar h1 {
+  font-size: 3.5rem;
+}
+.nav-bar nav {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-bar nav .nav-left {
+  margin: 0 3rem;
+}
+.nav-bar nav .nav-right a,
+.nav-bar nav .nav-left a {
+  margin: 0 2rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+header .cta {
+  text-align: center;
+}
+header .cta h2 {
+  font-size: 2.8rem;
+  margin: 5rem 0 2rem;
+}
+header .cta p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+header .cta .cta-btn {
+  margin-bottom: 10rem;
+}
+header .cta .cta-btn button {
+  cursor: pointer;
+  padding: 2%;
+}
