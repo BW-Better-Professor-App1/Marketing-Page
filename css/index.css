@@ -184,6 +184,7 @@ p {
 .nav-bar nav .nav-left a {
   margin: 0 2rem;
   font-size: 1.5rem;
+  color: #5E6164;
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -370,6 +371,7 @@ header .cta .cta-btn button:hover {
   margin: 3rem;
   text-decoration: none;
   transition: color 0.2s;
+  color: #5E6164;
 }
 .footer-nav .social-links a:hover,
 .footer-nav .legal-links a:hover {
@@ -392,4 +394,79 @@ header .cta .cta-btn button:hover {
 }
 .footer-nav .legal-container p span {
   color: #6C63FF;
+}
+.team {
+  text-align: center;
+}
+.team h1 {
+  font-size: 4rem;
+}
+.team .card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 6%;
+}
+.team .card-wrapper .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0.2rem solid #6C63FF;
+  border-radius: 10%;
+  width: 30%;
+  padding: 3% 4% 2%;
+  margin-bottom: 3rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.team .card-wrapper .card:hover {
+  transform: translate(-1rem, -1rem);
+  box-shadow: 0.5rem 0.5rem 0.3rem rgba(0, 0, 0, 0.2);
+}
+.team .card-wrapper .card .card-img {
+  margin-bottom: 5%;
+}
+.team .card-wrapper .card .card-img img {
+  width: 50%;
+  border: 0.3rem solid #6C63FF;
+  border-radius: 50%;
+}
+.team .card-wrapper .card .card-info .name {
+  font-size: 2.2rem;
+}
+.team .card-wrapper .card .card-info .title {
+  margin-top: 1%;
+  font-size: 1.5rem;
+}
+.team .card-wrapper .card .card-info .inf-text {
+  margin: 3% 0;
+  font-size: 1.2rem;
+}
+.team .card-wrapper .card .card-contact {
+  width: 100%;
+  margin: 6% 0 10%;
+}
+.team .card-wrapper .card .card-contact button {
+  width: 50%;
+  padding: 2%;
+  cursor: pointer;
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  color: white;
+  background-color: #6C63FF;
+  transition: background-color 0.2s, border 0.2s;
+  border: none;
+  border-radius: 1rem;
+  outline: none;
+}
+.team .card-wrapper .card .card-contact button:hover {
+  background-color: #454B69;
+}
+.team .card-wrapper .card .card-social-links {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: 2%;
+}
+.team .card-wrapper .card .card-social-links a {
+  font-size: 1.7rem;
 }
