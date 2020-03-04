@@ -1,0 +1,52 @@
+//Student Success
+.students-success {
+  padding: 3% 10% 3%;
+  width: 100%;
+
+  @media @tablet {
+    padding: 1% 7% 2%;
+    margin-top: -7%;
+    margin-bottom: 3%;
+  }
+
+  & div:last-child {
+    margin: 9rem 0 1rem;
+  }
+
+  .success-descript {
+    display: flex;
+    align-items: center;
+
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 4rem;
+      color: @primary-purple;
+      text-transform: uppercase;
+
+      @media @tablet {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+      }
+    }
+    p {
+      margin-top: 2rem;
+      font-size: 1.5rem;
+      letter-spacing: 0.1rem;
+
+      @media @tablet {
+        font-size: 1.3rem;
+      }
+    }
+    .student-img {
+      width: 100%;
+      margin: 0 7rem;
+
+      @media @tablet {
+        margin: 0 5rem;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

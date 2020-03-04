@@ -210,6 +210,42 @@ p {
 .nav-bar nav .nav-left a:hover {
   color: #6C63FF;
 }
+.footer-nav .social-links a:visited,
+.footer-nav .legal-links a:visited,
+.footer-nav .social-links a:active,
+.footer-nav .legal-links a:active {
+  color: #454B69;
+}
+.footer-nav .social-links a,
+.footer-nav .legal-links a {
+  font-size: 2rem;
+  margin: 3rem;
+  text-decoration: none;
+  transition: color 0.2s;
+  color: #5E6164;
+}
+.footer-nav .social-links a:hover,
+.footer-nav .legal-links a:hover {
+  color: #6C63FF;
+}
+.footer-nav .social-links {
+  display: flex;
+  justify-content: center;
+}
+.footer-nav .social-links a {
+  font-size: 2.5rem;
+}
+.footer-nav .legal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-nav .legal-container p {
+  font-size: 2rem;
+}
+.footer-nav .legal-container p span {
+  color: #6C63FF;
+}
 header .cta {
   margin-bottom: -10rem;
   display: flex;
@@ -393,7 +429,7 @@ header .cta .cta-btn button:hover {
 .students-success .success-descript .student-img img {
   width: 100%;
 }
-.reviews {
+.register {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -401,30 +437,30 @@ header .cta .cta-btn button:hover {
   padding: 3%;
 }
 @media (max-width: 800px) {
-  .reviews {
+  .register {
     padding: 5%;
   }
 }
-.reviews .join-now {
+.register .join-now {
   display: flex;
   flex-direction: column;
 }
-.reviews .join-now h2 {
+.register .join-now h2 {
   margin-bottom: 4rem;
 }
-.reviews .join-now h2 span {
+.register .join-now h2 span {
   color: #6C63FF;
 }
 @media (max-width: 800px) {
-  .reviews .join-now h2 {
+  .register .join-now h2 {
     font-size: 2.5rem;
   }
 }
-.reviews .join-now .register-btn {
+.register .join-now .register-btn {
   width: 100%;
   text-align: center;
 }
-.reviews .join-now .register-btn button {
+.register .join-now .register-btn button {
   cursor: pointer;
   padding: 2.5%;
   width: 50%;
@@ -437,47 +473,19 @@ header .cta .cta-btn button:hover {
   border-radius: 2rem 5rem;
   outline: none;
 }
-.reviews .join-now .register-btn button:hover {
+.register .join-now .register-btn button:focus {
+  outline: none;
+}
+.register .join-now .register-btn button:hover {
   background-color: #6C63FF;
-}
-.footer-nav .social-links a:visited,
-.footer-nav .legal-links a:visited,
-.footer-nav .social-links a:active,
-.footer-nav .legal-links a:active {
-  color: #454B69;
-}
-.footer-nav .social-links a,
-.footer-nav .legal-links a {
-  font-size: 2rem;
-  margin: 3rem;
-  text-decoration: none;
-  transition: color 0.2s;
-  color: #5E6164;
-}
-.footer-nav .social-links a:hover,
-.footer-nav .legal-links a:hover {
-  color: #6C63FF;
-}
-.footer-nav .social-links {
-  display: flex;
-  justify-content: center;
-}
-.footer-nav .social-links a {
-  font-size: 2.5rem;
-}
-.footer-nav .legal-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.footer-nav .legal-container p {
-  font-size: 2rem;
-}
-.footer-nav .legal-container p span {
-  color: #6C63FF;
 }
 .team {
   text-align: center;
+}
+@media (max-width: 800px) {
+  .team {
+    padding: 2%;
+  }
 }
 .team h1 {
   font-size: 4rem;
@@ -487,6 +495,11 @@ header .cta .cta-btn button:hover {
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 6%;
+}
+@media (max-width: 800px) {
+  .team .card-wrapper {
+    padding: 7% 3%;
+  }
 }
 .team .card-wrapper .card {
   display: flex;
@@ -498,6 +511,12 @@ header .cta .cta-btn button:hover {
   padding: 3% 4% 2%;
   margin-bottom: 3rem;
   transition: transform 0.2s, box-shadow 0.2s;
+}
+@media (max-width: 800px) {
+  .team .card-wrapper .card {
+    width: 43%;
+    padding: 4% 3% 2%;
+  }
 }
 .team .card-wrapper .card:hover {
   transform: translate(-1rem, -1rem);
@@ -546,6 +565,7 @@ header .cta .cta-btn button:hover {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
+  align-items: flex-end;
   margin: 2%;
 }
 .team .card-wrapper .card .card-social-links a {
