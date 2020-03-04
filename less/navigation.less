@@ -6,36 +6,45 @@
   align-items: center;
   margin: 0 auto 3rem;
   padding: 1%;
-  // position: fixed;
+
   h1 {
     font-size: 3.5rem;
-    // span {
-    //   color: @primary-purple;
-    // }
+
+    @media @tablet {
+      font-size: 2.5rem;
+    }
   }
 
   nav {
     width: 70%;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
+
     .nav-left {
       margin: 0 3rem;
     }
-    .nav-right,.nav-left {
+    .nav-right,
+    .nav-left {
       a {
         margin: 0 2rem;
         font-size: 1.5rem;
         color: @main-font-color;
         text-decoration: none;
-        transition: color .3s;
-        &:visited,&:active {
+        transition: color 0.3s;
+
+        @media @tablet {
+          margin: 0 1rem;
+          font-size: 1.4rem;
+        }
+        
+        &:visited,
+        &:active {
           color: @main-font-color;
         }
         &:hover {
-          color: @nav-links
+          color: @nav-links;
         }
       }
     }
   }
-
 }
