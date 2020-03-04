@@ -177,10 +177,20 @@ p {
     font-size: 2.5rem;
   }
 }
+@media (max-width: 500px) {
+  .nav-bar h1 {
+    font-size: 1.4rem;
+  }
+}
 .nav-bar nav {
   width: 70%;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .nav-bar nav {
+    width: 74%;
+  }
 }
 .nav-bar nav .nav-left {
   margin: 0 3rem;
@@ -198,6 +208,13 @@ p {
   .nav-bar nav .nav-left a {
     margin: 0 1rem;
     font-size: 1.4rem;
+  }
+}
+@media (max-width: 500px) {
+  .nav-bar nav .nav-right a,
+  .nav-bar nav .nav-left a {
+    font-size: 0.9rem;
+    margin: 0 0.5rem;
   }
 }
 .nav-bar nav .nav-right a:visited,
@@ -228,6 +245,12 @@ p {
 .footer-nav .legal-links a:hover {
   color: #6C63FF;
 }
+@media (max-width: 500px) {
+  .footer-nav .social-links a,
+  .footer-nav .legal-links a {
+    font-size: 1rem;
+  }
+}
 .footer-nav .social-links {
   display: flex;
   justify-content: center;
@@ -235,16 +258,15 @@ p {
 .footer-nav .social-links a {
   font-size: 2.5rem;
 }
+@media (max-width: 500px) {
+  .footer-nav .social-links a {
+    font-size: 1.8rem;
+  }
+}
 .footer-nav .legal-container {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.footer-nav .legal-container p {
-  font-size: 2rem;
-}
-.footer-nav .legal-container p span {
-  color: #6C63FF;
 }
 header .cta {
   margin-bottom: -10rem;
@@ -258,16 +280,28 @@ header .cta {
     padding: 2%;
   }
 }
+@media (max-width: 500px) {
+  header .cta {
+    padding: 3%;
+    padding-left: 5%;
+  }
+}
 header .cta .cta-container {
   display: flex;
 }
 header .cta .cta-container .cta-text {
   margin: -1rem 4rem;
 }
+@media (max-width: 500px) {
+  header .cta .cta-container .cta-text {
+    margin: -9% 2%;
+  }
+}
 header .cta .cta-container .cta-text h2 {
   font-size: 3rem;
   line-height: 4rem;
   margin: 5rem 0 2rem;
+  font-weight: 600;
 }
 header .cta .cta-container .cta-text h2 span {
   color: #6C63FF;
@@ -276,6 +310,12 @@ header .cta .cta-container .cta-text h2 span {
   header .cta .cta-container .cta-text h2 {
     font-size: 2.2rem;
     line-height: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  header .cta .cta-container .cta-text h2 {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
   }
 }
 header .cta .cta-container .cta-text p {
@@ -288,6 +328,12 @@ header .cta .cta-container .cta-text p {
     line-height: 2.5rem;
   }
 }
+@media (max-width: 500px) {
+  header .cta .cta-container .cta-text p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+}
 header .cta .cta-container .cta-img img {
   width: 100%;
 }
@@ -296,8 +342,18 @@ header .cta .cta-container .cta-img img {
     width: 95%;
   }
 }
+@media (max-width: 500px) {
+  header .cta .cta-container .cta-img img {
+    width: 80%;
+  }
+}
 header .cta .cta-btn {
   margin-bottom: 10rem;
+}
+@media (max-width: 500px) {
+  header .cta .cta-btn {
+    margin-bottom: 11rem;
+  }
 }
 header .cta .cta-btn button {
   cursor: pointer;
@@ -312,14 +368,21 @@ header .cta .cta-btn button {
   border-radius: 2rem 5rem;
   outline: none;
 }
+header .cta .cta-btn button:hover {
+  background-color: #6C63FF;
+}
 @media (max-width: 800px) {
   header .cta .cta-btn button {
     font-size: 1.2rem;
     padding: 2%;
   }
 }
-header .cta .cta-btn button:hover {
-  background-color: #6C63FF;
+@media (max-width: 500px) {
+  header .cta .cta-btn button {
+    font-size: 1rem;
+    padding: 2%;
+    width: 34%;
+  }
 }
 .features {
   display: flex;
@@ -331,10 +394,17 @@ header .cta .cta-btn button:hover {
 .features h2 {
   font-size: 3rem;
   margin: 4rem 5rem;
+  font-weight: 600;
 }
 @media (max-width: 800px) {
   .features h2 {
     margin: 3rem 4rem;
+  }
+}
+@media (max-width: 500px) {
+  .features h2 {
+    font-size: 1.8rem;
+    margin: 2rem 3rem 3rem;
   }
 }
 .features .feature-container {
@@ -353,14 +423,26 @@ header .cta .cta-btn button:hover {
     margin: 3rem 2rem 2rem;
   }
 }
+@media (max-width: 500px) {
+  .features .feature-container .app-feature {
+    margin: 2rem 1rem 1rem;
+  }
+}
 .features .feature-container .app-feature h3 {
   margin: 3rem 0;
   font-size: 2.1rem;
   text-transform: uppercase;
+  font-weight: 600;
 }
 @media (max-width: 800px) {
   .features .feature-container .app-feature h3 {
     font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .features .feature-container .app-feature h3 {
+    font-size: 0.9rem;
+    margin: 2rem 0 1rem;
   }
 }
 .features .feature-container .app-feature p {
@@ -369,6 +451,11 @@ header .cta .cta-btn button:hover {
 @media (max-width: 800px) {
   .features .feature-container .app-feature p {
     font-size: 1.3rem;
+  }
+}
+@media (max-width: 500px) {
+  .features .feature-container .app-feature p {
+    font-size: 0.9rem;
   }
 }
 .features .feature-container .app-feature .feature-img {
@@ -388,23 +475,43 @@ header .cta .cta-btn button:hover {
     margin-bottom: 3%;
   }
 }
+@media (max-width: 500px) {
+  .students-success {
+    margin-top: 1rem;
+    padding: 4%;
+  }
+}
 .students-success div:last-child {
   margin: 9rem 0 1rem;
+}
+@media (max-width: 500px) {
+  .students-success div:last-child {
+    margin: 1rem 0 1rem;
+  }
 }
 .students-success .success-descript {
   display: flex;
   align-items: center;
+}
+@media (max-width: 500px) {
 }
 .students-success .success-descript h2 {
   font-size: 3rem;
   margin-bottom: 4rem;
   color: #6C63FF;
   text-transform: uppercase;
+  font-weight: 600;
 }
 @media (max-width: 800px) {
   .students-success .success-descript h2 {
     font-size: 2rem;
     margin-bottom: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .students-success .success-descript h2 {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
   }
 }
 .students-success .success-descript p {
@@ -417,6 +524,12 @@ header .cta .cta-btn button:hover {
     font-size: 1.3rem;
   }
 }
+@media (max-width: 500px) {
+  .students-success .success-descript p {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+}
 .students-success .success-descript .student-img {
   width: 100%;
   margin: 0 7rem;
@@ -425,6 +538,8 @@ header .cta .cta-btn button:hover {
   .students-success .success-descript .student-img {
     margin: 0 5rem;
   }
+}
+@media (max-width: 500px) {
 }
 .students-success .success-descript .student-img img {
   width: 100%;
@@ -447,6 +562,7 @@ header .cta .cta-btn button:hover {
 }
 .register .join-now h2 {
   margin-bottom: 4rem;
+  font-weight: 600;
 }
 .register .join-now h2 span {
   color: #6C63FF;
@@ -454,6 +570,11 @@ header .cta .cta-btn button:hover {
 @media (max-width: 800px) {
   .register .join-now h2 {
     font-size: 2.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .register .join-now h2 {
+    font-size: 2rem;
   }
 }
 .register .join-now .register-btn {
@@ -471,13 +592,18 @@ header .cta .cta-btn button:hover {
   transition: background-color 0.2s, border 0.2s;
   border: none;
   border-radius: 2rem 5rem;
-  outline: none;
 }
 .register .join-now .register-btn button:focus {
   outline: none;
 }
 .register .join-now .register-btn button:hover {
   background-color: #6C63FF;
+}
+@media (max-width: 500px) {
+  .register .join-now .register-btn button {
+    font-size: 1rem;
+    width: 40%;
+  }
 }
 .team {
   text-align: center;
