@@ -74,8 +74,18 @@
         width: 100%;
         justify-content: space-evenly;
         margin: 2%;
+
         a {
           font-size: 1.7rem;
+          transition: color 0.2s;
+
+          &:visited,
+          &:active {
+            color: @main-font-color;
+          }
+          &:hover {
+            color: @nav-links;
+          }
         }
       }
     }

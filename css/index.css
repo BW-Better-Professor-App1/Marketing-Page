@@ -190,8 +190,8 @@ p {
 }
 .nav-bar nav .nav-right a:visited,
 .nav-bar nav .nav-left a:visited,
-.nav-bar nav .nav-right a active,
-.nav-bar nav .nav-left a active {
+.nav-bar nav .nav-right a:active,
+.nav-bar nav .nav-left a:active {
   color: #5E6164;
 }
 .nav-bar nav .nav-right a:hover,
@@ -469,4 +469,12 @@ header .cta .cta-btn button:hover {
 }
 .team .card-wrapper .card .card-social-links a {
   font-size: 1.7rem;
+  transition: color 0.2s;
+}
+.team .card-wrapper .card .card-social-links a:visited,
+.team .card-wrapper .card .card-social-links a:active {
+  color: #5E6164;
+}
+.team .card-wrapper .card .card-social-links a:hover {
+  color: #6C63FF;
 }
