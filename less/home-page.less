@@ -17,6 +17,10 @@ header {
       padding-left: 5%;
     }
 
+    @media @s-phone {
+      // padding: 0;
+    }
+
     .cta-container {
       display: flex;
       
@@ -37,6 +41,12 @@ header {
         @media @m-phone {
           margin: -8% 0;
           margin-left: 5%;
+        }
+        @media @s-phone {
+          margin-top: -13%;
+          margin-left: 5%;
+          width: 100%;
+         
         }
         h2 {
           font-size: 3rem;
@@ -65,6 +75,10 @@ header {
             font-size: 1.3rem;
             line-height: 1.5rem;
           }
+          @media @s-phone {
+            font-size: 1rem;
+            line-height: 1.7rem;
+          }
         }
         p {
           font-size: 1.5rem;
@@ -85,6 +99,9 @@ header {
           @media @m-phone {
             display: none;
           }
+          @media @s-phone {
+            display: none;
+          }
         }
       }
       .cta-img {
@@ -99,6 +116,9 @@ header {
           }
           @media @m-phone {
             width: 67%;
+          }
+          @media @s-phone {
+            width: 64%;
           }
         }
       }
@@ -148,6 +168,9 @@ header {
         }
         @media @m-phone {
           font-size: 0.9rem;
+        }
+        @media @s-phone {
+          font-size: .7rem;
         }
       }
     }

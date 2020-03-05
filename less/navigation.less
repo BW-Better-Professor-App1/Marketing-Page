@@ -19,7 +19,13 @@
       color: @nav-links;
     }
   }
-
+  
+  @media @m-phone {
+    padding: 2%;
+  }
+  @media @s-phone {
+    padding: 2.2%;
+  }
   h1 {
     font-size: 3rem;
 
@@ -43,6 +49,9 @@
       font-size: 1.2rem;
       width: 30%;
     }
+    @media @s-phone {
+      width: 50%;
+    }
   }
 
   nav {
@@ -56,6 +65,9 @@
 
     .nav-left {
       margin: 0 3rem;
+      @media @s-phone {
+        margin: 0;
+      }
     }
     .nav-right,
     .nav-left {

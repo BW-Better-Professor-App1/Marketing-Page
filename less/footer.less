@@ -11,8 +11,7 @@
       margin: 3rem;
       text-decoration: none;
       transition: color 0.2s;
-      color: @main-font-color
-      ;
+      color: @main-font-color;
       &:hover {
         color: @nav-links;
       }
@@ -37,11 +36,26 @@
         font-size: 1.8rem;
       }
     }
-
   }
   .legal-container {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .legal-links {
+      text-align: center;
+      a {
+        @media @m-phone {
+          margin-right: 0;
+        }
+        @media @s-phone {
+          margin-right: 0;
+        }
+      }
+    }
   }
+}
+.about-nav {
+  padding: 3%;
+  background-color: @primary-purple-light;
 }

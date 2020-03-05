@@ -17,6 +17,9 @@
       font-size: 3.5rem;
       margin: 3% 0;
     }
+    @media @s-phone {
+      font-size: 3.2rem;
+    }
   }
 
   .card-wrapper {
@@ -27,6 +30,15 @@
 
     @media @tablet {
       padding: 7% 3%;
+    }
+    @media @m-phone {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media @s-phone {
+      flex-direction: column;
+      align-items: center;
     }
 
     .card {
@@ -45,7 +57,11 @@
         padding: 4% 3% 2%;
       }
 
-      @media @phone {
+      @media @m-phone {
+        width: 60%;
+      }
+      @media @s-phone {
+        width: 70%;
       }
 
       &:hover {
