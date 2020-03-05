@@ -19,16 +19,29 @@
       margin: 3rem 4rem;
     }
 
+    @media @m-tablet {
+      font-size: 2rem;
+    }
+
     @media @phone {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       margin: 2rem 3rem 3rem;
     }
+    @media @m-phone {
+      display: none;
+    }
   }
+
   .feature-container {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
     text-align: center;
+
+    @media @m-phone {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
 
     .app-feature {
       margin: 5rem 2rem 2rem;
@@ -41,6 +54,10 @@
 
       @media @phone {
         margin: 2rem 1rem 1rem;
+      }
+
+      @media @m-phone {
+        width: 80%;
       }
 
       h3 {
@@ -57,9 +74,15 @@
           font-size: 1.5rem;
         }
 
+        @media @m-tablet {
+          font-size: 1.2rem;
+        }
         @media @phone {
           font-size: .9rem;
           margin: 2rem 0 1rem;
+        }
+        @media @m-phone {
+        font-size: 1.5rem;
         }
       }
 
@@ -72,6 +95,10 @@
 
         @media @phone {
           font-size: .9rem;
+
+          @media @m-phone {
+            font-size: 1.2rem;
+          }
         }
       }
 
@@ -79,6 +106,9 @@
         width: 100%;
         img {
           width: 100%;
+          @media @m-phone {
+           width: 60%;
+          }
         }
       }
     }

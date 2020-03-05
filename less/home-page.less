@@ -9,7 +9,9 @@ header {
     @media @tablet {
       padding: 2%;
     }
-
+    @media @m-tablet {
+      // padding: 4%;
+    }
     @media @phone {
       padding: 3%;
       padding-left: 5%;
@@ -17,17 +19,25 @@ header {
 
     .cta-container {
       display: flex;
+      
       .cta-text {
         margin: -1rem 4rem;
 
         @media @m-desktop {
           margin-top: -4%;
         }
-        @media @phone {
-          margin: -9% 2%;
-          // margin-left: 3rem;
+
+        @media @m-tablet {
+          margin-top: -6%;
         }
 
+        @media @phone {
+          margin: -9% 2%;
+        }
+        @media @m-phone {
+          margin: -8% 0;
+          margin-left: 5%;
+        }
         h2 {
           font-size: 3rem;
           line-height: 4rem;
@@ -43,9 +53,17 @@ header {
             line-height: 3rem;
           }
 
+          @media @m-tablet {
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+          }
           @media @phone {
             font-size: 1.5rem;
             line-height: 2.5rem;
+          }
+          @media @m-phone {
+            font-size: 1.3rem;
+            line-height: 1.5rem;
           }
         }
         p {
@@ -56,9 +74,16 @@ header {
             font-size: 1.2rem;
             line-height: 2.5rem;
           }
+          @media @m-tablet {
+            font-size: 1rem;
+            line-height: 1.6rem;
+          }
           @media @phone {
             font-size: 0.8rem;
             line-height: 1.2rem;
+          }
+          @media @m-phone {
+            display: none;
           }
         }
       }
@@ -71,6 +96,9 @@ header {
           }
           @media @phone {
             width: 80%;
+          }
+          @media @m-phone {
+            width: 67%;
           }
         }
       }
@@ -117,6 +145,9 @@ header {
           font-size: 1rem;
           padding: 2%;
           width: 34%;
+        }
+        @media @m-phone {
+          font-size: 0.9rem;
         }
       }
     }
