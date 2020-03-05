@@ -3,9 +3,13 @@
   padding: 3% 10% 3%;
   width: 100%;
 
+  @media @m-desktop {
+    margin-top: -3%;
+    margin-bottom: 3%;
+  }
   @media @tablet {
     padding: 1% 7% 2%;
-    margin-top: -7%;
+    margin-top: -5%;
     margin-bottom: 3%;
   }
 
@@ -15,8 +19,11 @@
   }
 
   & div:last-child {
-    margin: 9rem 0 1rem;
+    margin: 7rem 0 3rem;
 
+    @media @m-desktop {
+      margin: 6rem 0rem 3rem;
+    }
     @media @phone {
       margin: 1rem 0 1rem;
     }
@@ -26,10 +33,6 @@
     display: flex;
     align-items: center;
 
-    @media @phone {
-      // flex-direction: column;
-    }
-
     h2 {
       font-size: 3rem;
       margin-bottom: 4rem;
@@ -37,6 +40,9 @@
       text-transform: uppercase;
       font-weight: 600;
 
+      @media @m-desktop {
+        font-size: 2.6rem;
+      }
       @media @tablet {
         font-size: 2rem;
         margin-bottom: 3rem;
@@ -53,6 +59,9 @@
       font-size: 1.5rem;
       letter-spacing: 0.1rem;
 
+      @media @m-desktop {
+        font-size: 1.4rem;
+      }
       @media @tablet {
         font-size: 1.3rem;
       }
