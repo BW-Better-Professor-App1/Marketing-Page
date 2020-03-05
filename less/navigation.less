@@ -6,7 +6,17 @@
   align-items: center;
   margin: 0 auto 3rem;
   padding: 1%;
-
+  a:visited,
+  a:active {
+    color: @main-font-color;
+  }
+  a {
+    text-decoration: none;
+    transition: color 0.3s;
+    &:hover {
+      color: @nav-links;
+    }
+  }
   h1 {
     font-size: 3.5rem;
 

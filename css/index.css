@@ -169,6 +169,17 @@ p {
   margin: 0 auto 3rem;
   padding: 1%;
 }
+.nav-bar a:visited,
+.nav-bar a:active {
+  color: #5E6164;
+}
+.nav-bar a {
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.nav-bar a:hover {
+  color: #6C63FF;
+}
 .nav-bar h1 {
   font-size: 3.5rem;
 }
@@ -613,8 +624,20 @@ header .cta .cta-btn button:hover {
     padding: 2%;
   }
 }
+@media (max-width: 500px) {
+  .team {
+    padding: 1%;
+  }
+}
 .team h1 {
   font-size: 4rem;
+  font-weight: 600;
+}
+@media (max-width: 500px) {
+  .team h1 {
+    font-size: 3.5rem;
+    margin: 3% 0;
+  }
 }
 .team .card-wrapper {
   display: flex;
@@ -658,14 +681,31 @@ header .cta .cta-btn button:hover {
 }
 .team .card-wrapper .card .card-info .name {
   font-size: 2.2rem;
+  font-weight: 600;
+}
+@media (max-width: 500px) {
+  .team .card-wrapper .card .card-info .name {
+    font-size: 1.5rem;
+  }
 }
 .team .card-wrapper .card .card-info .title {
   margin-top: 1%;
   font-size: 1.5rem;
 }
+@media (max-width: 500px) {
+  .team .card-wrapper .card .card-info .title {
+    margin: 5% 0;
+    font-size: 1.2rem;
+  }
+}
 .team .card-wrapper .card .card-info .inf-text {
   margin: 3% 0;
   font-size: 1.2rem;
+}
+@media (max-width: 500px) {
+  .team .card-wrapper .card .card-info .inf-text {
+    font-size: 1rem;
+  }
 }
 .team .card-wrapper .card .card-contact {
   width: 100%;
@@ -687,6 +727,12 @@ header .cta .cta-btn button:hover {
 .team .card-wrapper .card .card-contact button:hover {
   background-color: #454B69;
 }
+@media (max-width: 500px) {
+  .team .card-wrapper .card .card-contact button {
+    width: 45%;
+    font-size: 1.2rem;
+  }
+}
 .team .card-wrapper .card .card-social-links {
   display: flex;
   width: 100%;
@@ -704,4 +750,9 @@ header .cta .cta-btn button:hover {
 }
 .team .card-wrapper .card .card-social-links a:hover {
   color: #6C63FF;
+}
+@media (max-width: 500px) {
+  .team .card-wrapper .card .card-social-links a {
+    font-size: 1.4rem;
+  }
 }
