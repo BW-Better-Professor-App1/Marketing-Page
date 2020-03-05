@@ -1,0 +1,113 @@
+header {
+  .cta {
+    margin-bottom: -10rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5%;
+
+    @media @tablet {
+      padding: 2%;
+    }
+
+    @media @phone {
+      padding: 3%;
+      padding-left: 5%;
+    }
+
+    .cta-container {
+      display: flex;
+      .cta-text {
+        margin: -1rem 4rem;
+
+        @media @phone {
+          margin: -9% 2%;
+          // margin-left: 3rem;
+        }
+
+        h2 {
+          font-size: 3rem;
+          line-height: 4rem;
+          margin: 5rem 0 2rem;
+          font-weight: 600;
+
+          span {
+            color: @primary-purple;
+          }
+
+          @media @tablet {
+            font-size: 2.2rem;
+            line-height: 3rem;
+          }
+
+          @media @phone {
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+          }
+        }
+        p {
+          font-size: 1.5rem;
+          margin-bottom: 2rem;
+
+          @media @tablet {
+            font-size: 1.2rem;
+            line-height: 2.5rem;
+          }
+          @media @phone {
+            font-size: 0.8rem;
+            line-height: 1.2rem;
+          }
+        }
+      }
+      .cta-img {
+        img {
+          width: 100%;
+
+          @media @tablet {
+            width: 95%;
+          }
+          @media @phone {
+            width: 80%;
+          }
+        }
+      }
+    }
+
+    .cta-btn {
+      margin-bottom: 10rem;
+
+      @media @phone {
+        margin-bottom: 11rem;
+      }
+
+      button {
+        cursor: pointer;
+        padding: 2.5%;
+        width: 20%;
+        font-family: "Montserrat";
+        font-size: 1.5rem;
+        color: white;
+        background-color: @primary-purple-dark;
+        transition: background-color 0.2s, border 0.2s;
+        border: none;
+        border-radius: 2rem 5rem;
+        outline: none;
+
+        &:hover {
+          background-color: @primary-purple;
+        }
+
+        @media @tablet {
+          font-size: 1.2rem;
+          padding: 2%;
+        }
+
+        @media @phone {
+          font-size: 1rem;
+          padding: 2%;
+          width: 34%;
+        }
+      }
+    }
+  }
+}

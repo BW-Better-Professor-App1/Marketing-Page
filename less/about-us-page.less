@@ -1,0 +1,143 @@
+.team {
+  text-align: center;
+
+  @media @tablet {
+    padding: 2%;
+  }
+
+  @media @phone {
+    padding: 1%;
+  }
+
+  h1 {
+    font-size: 4rem;
+    font-weight: 600;
+
+    @media @phone {
+      font-size: 3.5rem;
+      margin: 3% 0;
+    }
+  }
+
+  .card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 6%;
+
+    @media @tablet {
+      padding: 7% 3%;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 0.2rem solid @primary-purple;
+      border-radius: 10%;
+      width: 30%;
+      padding: 3% 4% 2%;
+      margin-bottom: 3rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+
+      @media @tablet {
+        width: 43%;
+        padding: 4% 3% 2%;
+      }
+
+      @media @phone {
+      }
+      &:hover {
+        transform: translate(-1rem, -1rem);
+        box-shadow: 0.5rem 0.5rem 0.3rem rgba(0, 0, 0, 0.2);
+      }
+
+      .card-img {
+        margin-bottom: 5%;
+        img {
+          max-width: 50%;
+          border: 0.3rem solid @primary-purple;
+          border-radius: 50%;
+        }
+      }
+
+      .card-info {
+        .name {
+          font-size: 2.2rem;
+          font-weight: 600;
+
+          @media @phone {
+            font-size: 1.5rem;
+          }
+        }
+        .title {
+          margin-top: 1%;
+          font-size: 1.5rem;
+
+          @media @phone {
+            margin: 5% 0;
+            font-size: 1.2rem;
+          }
+        }
+        .inf-text {
+          margin: 3% 0;
+          font-size: 1.2rem;
+
+          @media @phone {
+            font-size: 1rem;
+          }
+        }
+      }
+
+      .card-contact {
+        width: 100%;
+        margin: 6% 0 10%;
+
+        button {
+          width: 50%;
+          padding: 2%;
+          cursor: pointer;
+          font-family: "Montserrat";
+          font-size: 1.5rem;
+          color: white;
+          background-color: @primary-purple;
+          transition: background-color 0.2s, border 0.2s;
+          border: none;
+          border-radius: 1rem;
+          outline: none;
+          &:hover {
+            background-color: @primary-purple-dark;
+          }
+
+          @media @phone {
+            width: 45%;
+            font-size: 1.2rem;
+          }
+        }
+      }
+      .card-social-links {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        margin: 2%;
+
+        a {
+          font-size: 1.7rem;
+          transition: color 0.2s;
+
+          &:visited,
+          &:active {
+            color: @main-font-color;
+          }
+          &:hover {
+            color: @nav-links;
+          }
+          @media @phone {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+}

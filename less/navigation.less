@@ -1,0 +1,73 @@
+.nav-bar {
+  background-color: @primary-purple-light;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 3rem;
+  padding: 1%;
+  a:visited,
+  a:active {
+    color: @main-font-color;
+  }
+  a {
+    text-decoration: none;
+    transition: color 0.3s;
+    &:hover {
+      color: @nav-links;
+    }
+  }
+  h1 {
+    font-size: 3.5rem;
+
+    @media @tablet {
+      font-size: 2.5rem;
+    }
+
+    @media @phone {
+      font-size: 1.4rem;
+    }
+  }
+
+  nav {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+
+    @media @phone {
+      width: 74%;
+    }
+
+    .nav-left {
+      margin: 0 3rem;
+    }
+    .nav-right,
+    .nav-left {
+      a {
+        margin: 0 2rem;
+        font-size: 1.5rem;
+        color: @main-font-color;
+        text-decoration: none;
+        transition: color 0.3s;
+
+        @media @tablet {
+          margin: 0 1rem;
+          font-size: 1.4rem;
+        }
+
+        @media @phone {
+          font-size: 0.9rem;
+          margin: 0 0.5rem;
+        }
+
+        &:visited,
+        &:active {
+          color: @main-font-color;
+        }
+        &:hover {
+          color: @nav-links;
+        }
+      }
+    }
+  }
+}

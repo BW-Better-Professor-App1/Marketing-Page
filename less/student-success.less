@@ -1,0 +1,80 @@
+//Student Success
+.students-success {
+  padding: 3% 10% 3%;
+  width: 100%;
+
+  @media @tablet {
+    padding: 1% 7% 2%;
+    margin-top: -7%;
+    margin-bottom: 3%;
+  }
+
+  @media @phone {
+    margin-top: 1rem;
+    padding: 4%;
+  }
+
+  & div:last-child {
+    margin: 9rem 0 1rem;
+
+    @media @phone {
+      margin: 1rem 0 1rem;
+    }
+  }
+
+  .success-descript {
+    display: flex;
+    align-items: center;
+
+    @media @phone {
+      // flex-direction: column;
+    }
+
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 4rem;
+      color: @primary-purple;
+      text-transform: uppercase;
+      font-weight: 600;
+
+      @media @tablet {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+      }
+
+      @media @phone {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+      }
+    }
+
+    p {
+      margin-top: 2rem;
+      font-size: 1.5rem;
+      letter-spacing: 0.1rem;
+
+      @media @tablet {
+        font-size: 1.3rem;
+      }
+
+      @media @phone {
+        font-size: 0.9rem;
+        margin-top: 1rem;
+      }
+    }
+    .student-img {
+      width: 100%;
+      margin: 0 7rem;
+
+      @media @tablet {
+        margin: 0 5rem;
+      }
+      @media @phone {
+        // margin: 0 auto;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
