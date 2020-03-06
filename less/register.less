@@ -1,8 +1,6 @@
 //Register Section
 .register {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  .displayMix(center, @direction:column);
   background-color: @primary-purple-light;
   padding: 3%;
 
@@ -34,25 +32,12 @@
       width: 100%;
       text-align: center;
       button {
-        cursor: pointer;
-        padding: 2.5%;
-        width: 50%;
-        font-family: "Montserrat";
-        font-size: 1.5rem;
-        color: white;
-        background-color: @primary-purple-dark;
-        transition: background-color 0.2s, border 0.2s;
-        border: none;
-        border-radius: 2rem 5rem;
-        // outline: none;
+        .btnMix(@primary-purple-dark,@primary-purple, @width:50%);
 
         &:focus {
           outline: none;
         }
 
-        &:hover {
-          background-color: @primary-purple;
-        }
         @media @phone {
           font-size: 1rem;
           width: 40%;

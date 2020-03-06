@@ -9,20 +9,20 @@
 }
 
 //button
-.btnMix(@bg-color, @width:25%) {
+.btnMix(@bg-color, @hover-color, @width:25%, @pad:2.5%, @b-radius:2rem 5rem) {
   cursor: pointer;
-  padding: 2.5%;
+  padding: @pad;
   width: @width;
   font-family: "Montserrat";
   font-size: 1.5rem;
   color: white;
-  background-color: @primary-purple-dark;
+  background-color: @bg-color;
   transition: background-color 0.2s, border 0.2s;
   border: none;
-  border-radius: 2rem 5rem;
+  border-radius: @b-radius;
   outline: none;
 
   &:hover {
-    background-color: @primary-purple;
+    background-color: @hover-color;
   }
 }

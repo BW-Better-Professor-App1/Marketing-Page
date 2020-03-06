@@ -115,21 +115,8 @@
         margin: 6% 0 10%;
 
         button {
-          width: 50%;
-          padding: 2%;
-          cursor: pointer;
-          font-family: "Montserrat";
-          font-size: 1.5rem;
-          color: white;
-          background-color: @primary-purple;
-          transition: background-color 0.2s, border 0.2s;
-          border: none;
-          border-radius: 1rem;
-          outline: none;
-          &:hover {
-            background-color: @primary-purple-dark;
-          }
-
+          .btnMix(@primary-purple,@primary-purple-dark, @width:50%, @pad:2%, @b-radius:1rem);
+          
           @media @phone {
             width: 45%;
             font-size: 1.2rem;
@@ -137,9 +124,8 @@
         }
       }
       .card-social-links {
-        .displayMix(space-evenly);
+        .displayMix(space-evenly,@align:flex-end);
         width: 100%;
-        align-items: flex-end;
         margin: 2%;
 
         a {
