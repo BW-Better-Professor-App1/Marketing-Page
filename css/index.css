@@ -991,8 +991,10 @@ header .cta .cta-btn button:hover {
 }
 .team .card-wrapper {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding: 6%;
 }
 @media (max-width: 800px) {
@@ -1002,20 +1004,25 @@ header .cta .cta-btn button:hover {
 }
 @media (min-width: 376px) and (max-width: 455px) {
   .team .card-wrapper {
-    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
+    flex-direction: column;
   }
 }
 @media (max-width: 375px) {
   .team .card-wrapper {
-    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
+    flex-direction: column;
   }
 }
 .team .card-wrapper .card {
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
+  flex-direction: column;
   border: 0.2rem solid #6C63FF;
   border-radius: 10%;
   width: 30%;
@@ -1117,8 +1124,10 @@ header .cta .cta-btn button:hover {
 }
 .team .card-wrapper .card .card-social-links {
   display: flex;
-  width: 100%;
   justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
   align-items: flex-end;
   margin: 2%;
 }

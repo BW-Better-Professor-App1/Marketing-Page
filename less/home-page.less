@@ -135,21 +135,7 @@ header {
       }
 
       button {
-        cursor: pointer;
-        padding: 2.5%;
-        width: 25%;
-        font-family: "Montserrat";
-        font-size: 1.5rem;
-        color: white;
-        background-color: @primary-purple-dark;
-        transition: background-color 0.2s, border 0.2s;
-        border: none;
-        border-radius: 2rem 5rem;
-        outline: none;
-
-        &:hover {
-          background-color: @primary-purple;
-        }
+        .btnMix(@primary-purple-dark);
 
         @media @m-desktop {
           font-size: 1.3rem;
