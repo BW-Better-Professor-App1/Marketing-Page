@@ -9,22 +9,45 @@ header {
     @media @tablet {
       padding: 2%;
     }
-
+    @media @m-tablet {
+      // padding: 4%;
+    }
     @media @phone {
       padding: 3%;
       padding-left: 5%;
     }
 
+    @media @s-phone {
+      // padding: 0;
+    }
+
     .cta-container {
       display: flex;
+      
       .cta-text {
         margin: -1rem 4rem;
 
-        @media @phone {
-          margin: -9% 2%;
-          // margin-left: 3rem;
+        @media @m-desktop {
+          margin-top: -4%;
         }
 
+        @media @m-tablet {
+          margin-top: -6%;
+        }
+
+        @media @phone {
+          margin: -9% 2%;
+        }
+        @media @m-phone {
+          margin: -8% 0;
+          margin-left: 5%;
+        }
+        @media @s-phone {
+          margin-top: -13%;
+          margin-left: 5%;
+          width: 100%;
+         
+        }
         h2 {
           font-size: 3rem;
           line-height: 4rem;
@@ -40,9 +63,21 @@ header {
             line-height: 3rem;
           }
 
+          @media @m-tablet {
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+          }
           @media @phone {
             font-size: 1.5rem;
             line-height: 2.5rem;
+          }
+          @media @m-phone {
+            font-size: 1.3rem;
+            line-height: 1.5rem;
+          }
+          @media @s-phone {
+            font-size: 1rem;
+            line-height: 1.7rem;
           }
         }
         p {
@@ -53,9 +88,19 @@ header {
             font-size: 1.2rem;
             line-height: 2.5rem;
           }
+          @media @m-tablet {
+            font-size: 1rem;
+            line-height: 1.6rem;
+          }
           @media @phone {
             font-size: 0.8rem;
             line-height: 1.2rem;
+          }
+          @media @m-phone {
+            display: none;
+          }
+          @media @s-phone {
+            display: none;
           }
         }
       }
@@ -69,6 +114,12 @@ header {
           @media @phone {
             width: 80%;
           }
+          @media @m-phone {
+            width: 67%;
+          }
+          @media @s-phone {
+            width: 64%;
+          }
         }
       }
     }
@@ -76,25 +127,19 @@ header {
     .cta-btn {
       margin-bottom: 10rem;
 
+      @media @tablet {
+        margin-bottom: 11rem;
+      }
       @media @phone {
         margin-bottom: 11rem;
       }
 
       button {
-        cursor: pointer;
-        padding: 2.5%;
-        width: 20%;
-        font-family: "Montserrat";
-        font-size: 1.5rem;
-        color: white;
-        background-color: @primary-purple-dark;
-        transition: background-color 0.2s, border 0.2s;
-        border: none;
-        border-radius: 2rem 5rem;
-        outline: none;
+        .btnMix(@primary-purple-dark, @primary-purple);
 
-        &:hover {
-          background-color: @primary-purple;
+        @media @m-desktop {
+          font-size: 1.3rem;
+          width: 27%;
         }
 
         @media @tablet {
@@ -106,6 +151,12 @@ header {
           font-size: 1rem;
           padding: 2%;
           width: 34%;
+        }
+        @media @m-phone {
+          font-size: 0.9rem;
+        }
+        @media @s-phone {
+          font-size: .7rem;
         }
       }
     }

@@ -1,0 +1,28 @@
+//mixins
+
+//Display
+.displayMix(@justify, @align:center, @direction:row) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+  flex-direction: @direction;
+}
+
+//button
+.btnMix(@bg-color, @hover-color, @width:25%, @pad:2.5%, @b-radius:2rem 5rem) {
+  cursor: pointer;
+  padding: @pad;
+  width: @width;
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  color: white;
+  background-color: @bg-color;
+  transition: background-color 0.2s, border 0.2s;
+  border: none;
+  border-radius: @b-radius;
+  outline: none;
+
+  &:hover {
+    background-color: @hover-color;
+  }
+}
